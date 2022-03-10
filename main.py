@@ -22,6 +22,24 @@ def say_math(math_func, num):
   print("The result of "+str(math_func)+" applied to "+str(num)+" is "+str(res))
 
 
+
+
+
+def m ():
+  print("\n*   *\n** **\n* * *\n*   *\n*   *")
+
+def i():
+  print("\n*****\n  *  \n  *  \n  *  \n*****")
+
+def s():
+  print("\n ****\n*    \n *** \n    * \n**** ")
+
+def p ():
+  print("\n**** \n*   *\n**** \n*    \n*    ")
+
+
+
+  
 print("Part 1")
 num1 = 42
 num2 = 12
@@ -40,4 +58,16 @@ say_math(math.trunc, 9)
 say_math(math.factorial, 9)
 say_math(math.log2, 9)
 
-
+print("Part 4 skipped straight to 5")
+#Mississippi
+m()
+i()
+s()
+s()
+i()
+s()
+s()
+i()
+p()
+p()
+i()
