@@ -11,19 +11,21 @@ def print_division_info(num1, num2):
 
 
 def solve_quadratic(a, b, c):
-  x1 = b + math.sqrt(b ** 2  - (4*a*c))/(2*a)
-  x2 = b - math.sqrt(b ** 2 - (4*a*c))/(2*a)
+  x1 = (-b + math.sqrt(b ** 2  - 4*a*c) )/(2*a)
+  x2 = (-b - math.sqrt(b ** 2 - 4*a*c) )/(2*a)
   print("The roots of y = "+str(a)+"x^2 + "+str(b)+"x + "+str(c)+" are "+str(x1)+" and "+str(x2))
 
 
-  
 print("Part 1")
 num1 = 42
 num2 = 12
 print_division_info(num1, num2)
 
 print("Part 2")
-solve_quadratic(4, 6, 9)
+solve_quadratic(1, 1, 0)
+print("It wont solve certain with certain groups of numbers like 4,6,9")
+solve_quadratic(2, 3, 1)
 
+solve_quadratic(1, 0, -1)
 
 
