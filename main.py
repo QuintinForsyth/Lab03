@@ -16,6 +16,12 @@ def solve_quadratic(a, b, c):
   print("The roots of y = "+str(a)+"x^2 + "+str(b)+"x + "+str(c)+" are "+str(x1)+" and "+str(x2))
 
 
+
+def say_math(math_func, num):
+  res = math_func(num)
+  print("The result of "+str(math_func)+" applied to "+str(num)+" is "+str(res))
+
+
 print("Part 1")
 num1 = 42
 num2 = 12
@@ -23,9 +29,15 @@ print_division_info(num1, num2)
 
 print("Part 2")
 solve_quadratic(1, 1, 0)
-print("It wont solve certain with certain groups of numbers like 4,6,9")
+
 solve_quadratic(2, 3, 1)
 
 solve_quadratic(1, 0, -1)
+
+print("Part 3")
+say_math(math.sqrt, 9)
+say_math(math.trunc, 9)
+say_math(math.factorial, 9)
+say_math(math.log2, 9)
 
 
